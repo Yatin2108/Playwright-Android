@@ -6,12 +6,13 @@
 
 ## Setup
 
-* Clone the repo and run `cd playwright-test`
+* Clone the repo
 * Run `npm install`
 
 ## Running your tests
 
-- To run a single test, run `npm test`
+- To run a desktop browser test, run `npm run test`
+- To run a android mobile browser test, run `npm run test:android`
 
   ### Run sample test on privately hosted websites
 
