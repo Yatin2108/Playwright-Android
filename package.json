@@ -1,0 +1,19 @@
+{
+  "name": "@playwright/test",
+  "version": "1.0.0",
+  "author": "",
+  "engines": {
+    "node": "16.16.0"
+  },
+  "description": "Sample package to show playwright tests run on BrowserStack",
+  "scripts": {
+    "test": "export BUILD=\"$(date +%H%m%s)\" && npx playwright test --config=./playwright.config.js --workers=5",
+    "test:android": "export BUILD=\"$(date +%H%m%s)\" && npx playwright test --config=./playwright.android.config.js --workers=5",
+    "test:local": "BROWSERSTACK_LOCAL=true npx playwright test --config=./playwright-local.config.js"
+  },
+  "devDependencies": {
+    "playwright": "1.28.1",
+    "@playwright/test": "1.28.1",
+    "browserstack-local": "^1.4.8"
+  }
+}
